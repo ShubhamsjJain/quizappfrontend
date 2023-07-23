@@ -1,0 +1,17 @@
+.button-align{
+    display: flex;
+    align-items: center;
+}
+
+.button-text{
+    margin-left: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+mat-icon {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    
+}

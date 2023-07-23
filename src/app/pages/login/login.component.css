@@ -1,0 +1,61 @@
+.full-width{
+
+    width: 100%;
+    margin-bottom: 10px;
+    
+    
+}
+
+.logo-img{
+    
+    width: 80px;
+    height: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+
+.button-container{
+
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.my-button{
+
+    margin-right: 20px;
+}
+
+
+.form-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* margin-top: 40px;  */
+    margin-bottom: 0px;
+    
+
+}
+.my-form{
+
+    width: 90%;
+    height: auto;
+    padding: 20px;
+
+}
+
+.mt20{
+    margin-top: 20px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+.ml20{
+    margin-left: 20px !important;
+}
+.mr20{
+    margin-right: 20px !important;
+}

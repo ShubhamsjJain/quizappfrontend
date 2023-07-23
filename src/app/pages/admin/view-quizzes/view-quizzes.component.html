@@ -1,0 +1,58 @@
+<div class="container">
+
+    <div class="row">
+
+        <mat-card class="mt10" *ngFor="let q of quizzes">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{q.title}}</mat-card-title>
+                <mat-card-subtitle>{{q.category.title}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{q.description}}</p>
+            </mat-card-content>
+        
+            <div class="container button-container">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <button mat-raised-button class="my-button" color="primary" [routerLink]="'/admin/view-questions/' + q.quiz_id +'/' + q.title">Questions</button>
+            
+                        <button mat-stroked-button class="my-button" color="accent">Max marks: {{q.maxMarks}}</button>
+                
+                        <button mat-stroked-button class="my-button" color="accent">No. of Questions: {{q.num_Of_Questions}}</button>
+                
+                        <button mat-raised-button class="my-button" color="primary">Attempts</button>
+
+                        <button mat-raised-button class="my-button" color="primary" [routerLink]="'/admin/update-quiz/' + q.quiz_id ">Update</button>
+     
+                        <button class="example-button-container" mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="deleteQuiz(q.quiz_id)">
+                              <mat-icon class="dustbin">delete</mat-icon>
+                        </button>
+                       
+                    </div>
+
+                    
+
+                    </div>
+
+                    
+            
+                
+                
+            </div>
+            
+        </mat-card>
+        
+
+    </div>
+
+    <div class="row">
+
+        <div class="text-center mt20">
+            <button mat-raised-button color="primary" routerLink="/admin/add-quiz">Add New Quiz</button>
+        </div>
+    </div>
+</div>
+

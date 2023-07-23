@@ -1,0 +1,19 @@
+.full-width{
+
+    width: 100%;
+    margin-bottom: 10px;
+    
+    
+}
+
+.button-container{
+
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.my-button{
+
+    margin-right: 20px;
+}

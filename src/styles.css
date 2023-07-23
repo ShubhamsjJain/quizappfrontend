@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, 
+body { 
+    height: 100%; 
+    
+}
+body { 
+    
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+body.mat-typography{
+    background-color: #eeeeee;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+.ml20{
+    margin-left: 20px !important;
+}
+.mr20{
+    margin-right: 20px !important;
+}
+.mt0{
+    margin-top: 0px !important;
+}
+.mt10{
+    margin-top: 10px !important;
+}

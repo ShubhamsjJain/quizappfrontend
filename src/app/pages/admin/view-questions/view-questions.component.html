@@ -1,0 +1,50 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="text-center mt20"><h1><b><i>Questions of {{title}} quiz</i></b></h1></div>
+
+        <mat-card *ngFor="let q of questions_quiz; let i = index" class="mt20">
+
+            <mat-card-content>
+
+                <p>
+                    <b>Q.{{i+1}} </b><span [innerHTML] = "q.question"></span>
+                </p>
+
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <p><b>a)</b> {{q.option1}}</p>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <p><b>b)</b> {{q.option2}}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+
+                            <p><b>c)</b> {{q.option3}}</p>
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <p><b>d)</b> {{q.option4}}</p>
+                        </div>
+
+                    </div>
+
+                    <mat-divider></mat-divider>
+                    <p class="mt20"><b>Correct Answer: </b>{{q.answer}}</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

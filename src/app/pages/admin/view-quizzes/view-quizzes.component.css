@@ -1,0 +1,43 @@
+.example-header-image {
+    background-image: url("../../../../assets/quiz.png");
+    background-size: cover;
+  }
+
+  .button-container{
+
+    display: flex;
+    align-items: center;
+    
+    /* margin-top: 20px; */
+}
+
+.my-button{
+
+  margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.example-button-container {
+  display: inline-block;
+  justify-content:right;
+  width: 35px;
+  height: 35px;
+  vertical-align:middle;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.dustbin{
+
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+  left: 5px;
+}
+
+
+

@@ -1,0 +1,56 @@
+
+    <div class="container">
+
+        <div class="row">
+
+            <mat-card>
+
+                
+
+                    <div class="header text-center"mat-subheader >
+                        <strong><i><h2>All Categories</h2> </i></strong> 
+                        <hr>     
+                    </div>
+
+                <mat-list>
+
+                    <div *ngFor=" let c of categories">
+
+                        
+                        <div class="button-text">
+
+                       
+                            <div class="icon-and-text">
+                            
+                                <mat-icon mat-list-icon>category</mat-icon>
+                            
+                                <span class="block-span"><b>{{c.title}}</b> </span>
+                                
+                       
+                            </div>
+                            <span class="block-span">{{c.description}}</span>
+                           
+                            
+                            <mat-divider></mat-divider>
+                        </div>
+
+                    </div>
+                
+                </mat-list>
+
+                <div class="button-container mb20 mt20">
+    
+                    <button mat-raised-button class="my-button" color="primary" routerLink="/admin/add-category">Add New Category</button>
+
+                  </div>
+
+
+            </mat-card>
+            
+            
+            
+        
+        </div>
+    </div>
+
+

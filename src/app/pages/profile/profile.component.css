@@ -1,0 +1,39 @@
+hr {
+    width:max content;
+    height: solid 50px black;
+    
+}
+
+.logo-img{
+    
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    border: solid 2px #3f51b5;
+    border-radius: 50%;
+}
+
+.table{
+    width: 100%;
+}
+
+.table tr td{
+    padding: 10px 50px ;
+    border: 0.5px solid  #3f51b5;
+}
+
+.button-container{
+
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+    padding-left: 40px;
+}
+
+.my-button{
+
+    margin-right: 20px;
+}
+mat-card-actions{
+    justify-content: center;
+}
