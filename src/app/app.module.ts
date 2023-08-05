@@ -18,6 +18,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
@@ -35,6 +36,12 @@ import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.co
 import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
 import { ViewQuestionsComponent } from './pages/admin/view-questions/view-questions.component';
+import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
+import { QuizInstructionsComponent } from './pages/user/quiz-instructions/quiz-instructions.component';
+import { StartQuizComponent } from './pages/user/start-quiz/start-quiz.component';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
 
 @NgModule({
@@ -57,7 +64,11 @@ import { ViewQuestionsComponent } from './pages/admin/view-questions/view-questi
     ViewQuizzesComponent,
     AddQuizComponent,
     UpdateQuizComponent,
-    ViewQuestionsComponent
+    ViewQuestionsComponent,
+    AddQuestionComponent,
+    LoadQuizComponent,
+    QuizInstructionsComponent,
+    StartQuizComponent
   ],
   imports: [
     BrowserModule,
@@ -73,8 +84,14 @@ import { ViewQuestionsComponent } from './pages/admin/view-questions/view-questi
     MatIconModule,
     MatListModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
     FormsModule,
     HttpClientModule,
+    CKEditorModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground: true,
+    }),
     
   ],
   providers: [authInterceptorProviders],

@@ -1,5 +1,6 @@
 <mat-card>
 
+    <!-- {{categories | json}} -->
     <mat-action-list>
         <div mat-subheader>Menu</div>
 
@@ -13,6 +14,20 @@
             
             <mat-icon mat-list-icon>account_circle</mat-icon> 
             <span class="button-text">Profile</span>
+        </button>
+
+        <button mat-list-item class="button-align" routerLink ="/user-dashboard/quiz/0">
+
+            
+            <mat-icon mat-list-icon>live_help</mat-icon> 
+            <span class="button-text">All Quizzes</span>
+        </button>
+
+        <button mat-list-item class="button-align" *ngFor="let c of categories" [routerLink] =" '/user-dashboard/quiz/' + c.cid ">
+
+            
+            <mat-icon mat-list-icon>live_help</mat-icon> 
+            <span class="button-text">{{c.title}}</span>
         </button>
 
     </mat-action-list>

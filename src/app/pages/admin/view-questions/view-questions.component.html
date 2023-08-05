@@ -45,6 +45,29 @@
                     <p class="mt20"><b>Correct Answer: </b>{{q.answer}}</p>
                 </div>
             </mat-card-content>
+
+            <mat-card-actions>
+
+                <div class="button-container2">
+
+                    <button mat-raised-button class="my-button2" color="primary">Update</button>
+                    <button class="example-button-container" mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="deleteQuestion(q.qid)">
+                        <mat-icon class="dustbin">delete</mat-icon>
+                    </button>
+
+                </div>
+                        
+
+                  
+
+
+            </mat-card-actions>
         </mat-card>
+
+    </div>
+
+    <div class="row button-container">
+
+        <button mat-raised-button class="my-button" color="primary" [routerLink]="'/admin/add-question/' + quiz_id + '/' + title ">Add Question</button>
     </div>
 </div>

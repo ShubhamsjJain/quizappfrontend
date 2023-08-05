@@ -16,6 +16,10 @@ import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.co
 import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
 import { ViewQuestionsComponent } from './pages/admin/view-questions/view-questions.component';
+import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
+import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
+import { QuizInstructionsComponent } from './pages/user/quiz-instructions/quiz-instructions.component';
+import { StartQuizComponent } from './pages/user/start-quiz/start-quiz.component';
 
 const routes: Routes = [
 
@@ -91,6 +95,14 @@ const routes: Routes = [
         component:ViewQuestionsComponent,
 
       },
+      {
+
+        path:'add-question/:quiz_id/:title',
+        component:AddQuestionComponent,
+
+      },
+
+      
       
       
     ]
@@ -111,11 +123,27 @@ const routes: Routes = [
         path:'',
         component:WelcomeComponent,
       },
+      {
+        path:'quiz/:cat_id',
+        component:LoadQuizComponent,
+      },
+      {
+        path:'questions/:quiz_id',
+        component:QuizInstructionsComponent,
+      },
       
     ]
     
 
   },
+
+  {
+    path:'start/:quiz_id',
+    component:StartQuizComponent,
+    canActivate: [userGuard],
+  },
+
+  
 
 
 ];

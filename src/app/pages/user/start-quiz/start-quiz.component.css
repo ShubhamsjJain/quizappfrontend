@@ -1,0 +1,57 @@
+.button-container{
+
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.my-button{
+
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.heading{
+
+    justify-content: center;
+    text-align: center;
+    margin-left: 200px ;
+}
+
+.result{
+
+    justify-content: center;
+    text-align: center;
+}
+
+.progress-spinner-card{
+
+    margin-top: 60px;
+    
+}
+
+.progress-spinner{
+
+    margin-top: 20px;
+    margin-left: 25px;
+    
+
+}
+
+mat-card-title{
+
+    text-align: center;
+}
+
+mat-card-subtitle{
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.4em;
+    text-align: center;
+}
